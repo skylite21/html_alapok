@@ -26,6 +26,7 @@
 
 <p>3. css class: "pirosdiv" css classal ellátott html elem, 
 megkapja a style tag-ben lévő .pirosdiv összes css property-t</p>
+
 <div class="pirosdiv">asdas Ez egy piros div.</div>
 <div id="lekerekitett">Ennek a széle le van kerekítve</div>
 
@@ -53,13 +54,13 @@ megkapja a style tag-ben lévő .pirosdiv összes css property-t</p>
 </style>
 
 
-
-<div class="doboz sarga-doboz">Ez egy sarga doboz</div>
-<div class="doboz zold-doboz">Ez egy zöld doboz</div>
-<div id="specialis-doboz" class="doboz"> specialis doboz</div>
+<div class="doboz sarga-doboz">Ez itt egy sarga doboz</div>
+<div class="doboz zold-doboz">ez itt ez egy zold bozo</div>
+<div id="specialis-doboz" class="doboz">ez egy specialis doboz</div>
 
 <style>
 
+/* a # kettőskereszt id-t jelent css-ben, a pont pedig class-t jelent */
 .doboz {
   width: 200px;
   height: 200px;
@@ -74,14 +75,14 @@ megkapja a style tag-ben lévő .pirosdiv összes css property-t</p>
 .zold-doboz {
   background-color: green;
 }
+
 #specialis-doboz {
   background-color: black;
+  border: 10px solid green;
+
 }
 
 </style>
-
-
-
 
 
 </body>
