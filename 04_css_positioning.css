@@ -8,14 +8,14 @@ body {
 .fixed-doboz {
     width: 100%;
     height: 50px;
-    background-color: blue;
-    color: white;
+    background-color: lightblue;
+    color: black;
     /* a position fixed, kiszedi az elemet a document flow-ból, és egy fix helyre beteszi */
     /* a többi elem számára ez az elem nem lesz látható */
-    position:fixed;
+    position: fixed;
     /* ezek csak akkor működnek ha a position: fixed be van állítva */
-    top:0;
-    right:0;
+    top: 0;
+    /* right:0; */
     /* a többi nem statikus pozíciójú elemhez képest ez az elem előrébb lesz */
     z-index: 1;
 }
@@ -28,7 +28,7 @@ body {
     background-color: green;
 /* az absolute position majdnem olyan mint a fixed, de az elem nem marad a böngésző ablakhoz képest fix helyen */
     /* a position absolute kiveszi az elemet a document flow-ból */
-    position:absolute;
+    position: absolute;
 }
 
 .narancs-doboz {
@@ -46,15 +46,18 @@ body {
     background-color: blue;
     /* a relative position esetén a többi elem számára ez az elem ugyanúgy látható marad, és nem esik ki */
     /* a document flow-ból, viszont el lehet mozdítani a pozícióját, a böngészőhöz képest relatívan */
-    position: relative;
-    left: 250px;
-    top: 50px;
+    position: static;
+    left: 550px;
+    /* top: 50px; */
 }
 
 .piros-doboz{
     width: 150px;
     height: 50px;
     background-color: red;
+    /* Ha egy szülő elem position absolute, vagy relative-ba van,  */
+    /* akkor a benne lévő elem ha absolute, vagy relative position-t kap,  */
+    /* akkor a szülőhöz képest fog elmozdulni, egyébként pedig a böngésző ablakhoz képest mozdulna el */
     position: absolute;
     left: 200px;
 }

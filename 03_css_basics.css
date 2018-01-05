@@ -79,7 +79,7 @@
     color: white;
     /* a position fixed, kiszedi az elemet a document flow-ból, és egy fix helyre beteszi */
     /* a többi elem számára ez az elem nem lesz látható */
-    position:fixed;
+    position: static;
     /* ezek csak akkor működnek ha a position: fixed be van állítva */
     top:0;
     right:0;
